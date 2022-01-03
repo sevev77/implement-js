@@ -7,6 +7,20 @@
   <title>Document</title>
 </head>
 <body>
-  <script src="./index.js" charset="utf-8"></script>
+  <script src="./implement.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    const hello1 = {
+        greeting: 'hello',
+        handshake: () => {}
+    }
+    const hello2 = {
+        greeting: 'hello',
+        handshake: 'seven'
+    }
+    const HelloIntroduction1 = implement(Introduction)(hello1);
+    console.log(HelloIntroduction1); // return the refference of hello1
+    // const HelloIntroduction2 = implement(Introduction)(hello2) // throw js error
+
+  </script>
 </body>
 </html>

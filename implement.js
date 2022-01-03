@@ -1,21 +1,8 @@
-const Hello1 = {
-    greeting: 'hello',
-    handshake: () => {}
-}
-const Hello2 = {
-    greeting: 'hello',
-    handshake: 'seven'
-}
+
 const Introduction = Interface('Introduction')({
     greeting: type('string'),
     handshake: type('function')
-}, { error: true })
-
-const HelloIntroduction1 = implement(Introduction)(Hello1)
-const HelloIntroduction2 = implement(Introduction)(Hello2)
-
-console.log(HelloIntroduction1);
-console.log(HelloIntroduction2);
+}, { error: true });
 
 function Interface(name) {
   return (schema) => {
